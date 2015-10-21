@@ -14,5 +14,14 @@ $dog = new Predators("Mammals", "Dog", "Black", "25kg");
 $dog->setPlantAnimal("Cat");
 $dog->setPlantAnimal("Rabbit");
 
-print_r($dog);
-echo $dog;
+$cat = new Predators("Mammals", "Cat", "Red", "15kg");
+$cat->setPlantAnimal("Fish");
+$cat->setPlantAnimal("Friskies");
+
+$sheep = new Predators("Herbivorous", "Sheep", "White", "50kg");
+$sheep->setPlantAnimal("Grass");
+
+
+echo $dog."<br>\n";
+echo $cat."<br>\n";
+echo $sheep."<br>\n";

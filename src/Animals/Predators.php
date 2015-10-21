@@ -46,6 +46,10 @@ class Predators extends Mammals
      */
     function __toString()
     {
-        return "Nyam-nyam: ".$this->getPlantAnimal();
+        return "Name: ".$this->getName()."<br>\n".
+               "Class: ".$this->getClass()."<br>\n".
+               "Color: ".$this->getColor()."<br>\n".
+               "Weight: ".$this->getWeight()."<br>\n".
+               "Nyam-nyam: ".$this->getPlantAnimal()."<br>\n";
     }
 }
