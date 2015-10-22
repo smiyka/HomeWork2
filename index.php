@@ -8,20 +8,29 @@
 
 require_once 'vendor/autoload.php';
 
-use Animals\Predators;
+use Animals\Predator;
+use Animals\Herbivorou;
+use Animals\Mammal;
 
-$dog = new Predators("Mammals", "Dog", "Black", "25kg");
-$dog->setPlantAnimal("Cat");
-$dog->setPlantAnimal("Rabbit");
+$dog = new Predator("Mammal", "Dog", "Black", "25kg");
 
-$cat = new Predators("Mammals", "Cat", "Red", "15kg");
-$cat->setPlantAnimal("Fish");
-$cat->setPlantAnimal("Friskies");
+$cat = new Predator("Mammal", "Cat", "Red", "15kg");
 
-$sheep = new Predators("Herbivorous", "Sheep", "White", "50kg");
-$sheep->setPlantAnimal("Grass");
+$sheep = new Predator();
+$sheep->setClass("Herbivorou");
+$sheep->setName("Sheep");
+$sheep->setColor("White");
+$sheep->setWeight("55kg");
+
+$leo = new Predator();
+$leo->setClass("Mammal");
+$leo->setName("Leo");
+$leo->setColor("Yellow");
+$leo->setWeight("100kg");
+
 
 
 echo $dog."<br>\n";
 echo $cat."<br>\n";
 echo $sheep."<br>\n";
+echo $leo."<br>\n";
